@@ -27,6 +27,7 @@ Alias: $LOINC-vitalsigns = http://hl7.org/fhir/ValueSet/observation-vitalsignres
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
+/*
 Instance: ObservationRespiratoryBasicObservation
 InstanceOf: DkCoreBasicObservation
 Title: "John's Respiratory rate measurement (Basic observation)"
@@ -79,6 +80,7 @@ Usage: #example
 * effectiveDateTime = 2023-11-01T12:00:00+01:00
 * contained[0] = ObservationOxySatBasicObservationOrg
 * derivedFrom = Reference(ObservationOxySatBasicObservationOrg)
+*/
 
 
 /* **************
@@ -87,6 +89,7 @@ Usage: #example
  *
  * ************** */
 
+/*
 Instance: ElseConsciousness
 InstanceOf: DkCoreObservation
 Usage: #example
@@ -115,7 +118,6 @@ Usage: #example
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * performer = Reference(SidselSygeplejerske)
-
 
 Instance: ElseBodyTemperature
 InstanceOf: DkCoreBasicObservation
@@ -191,6 +193,7 @@ Usage: #example
 * entry[=].resource = ElsesTOBSscore
 * entry[+].fullUrl = "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske"
 * entry[=].resource = SidselSygeplejerske
+*/
 
 /* **************
 *
@@ -198,6 +201,7 @@ Usage: #example
 *
 * ************** */
 
+/*
 Instance: MaxConsciousness
 InstanceOf: DkCoreObservation
 Usage: #example
@@ -296,7 +300,6 @@ Usage: #example
 * component[+].code = $LOINC#9267-6 "Glasgow coma score eye opening"
 * component[=].valueCodeableConcept.coding = $LOINC#LA6556-0 "Eyes open spontaneously"
 
-
 Instance: MaxTOKS
 InstanceOf: Bundle
 Title: "Max TOKS measurements, including Glasgow Coma Scale assesment"
@@ -318,6 +321,7 @@ Usage: #example
 * entry[=].resource = MaxRespirationRate
 * entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale"
 * entry[=].resource = MaxGlasgowComaScale
+*/
 
 /* **************
 *
@@ -325,6 +329,7 @@ Usage: #example
 *
 * ************** */
 
+/*
 Instance: MaxVitalSignsPanel
 InstanceOf: DkCoreBasicObservation
 Usage: #example
@@ -424,7 +429,6 @@ Usage: #example
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 
-
 Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
 Usage: #example
@@ -462,16 +466,13 @@ Usage: #inline
 * effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
-
-
-
+*/
 
 /* **************
  *
  * Examples involving Continua compliant observations and exchanges
  *
  * ************** */
-
 
 Alias: $PhdPatient = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient
 Alias: $PhgDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice
@@ -490,7 +491,6 @@ Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
 
-
 Instance: Poul
 InstanceOf: NordicPatient
 Usage: #example
@@ -501,7 +501,7 @@ Usage: #example
   * family = "Hansen"
   * given[+] = "Poul"
 
-
+/*
 Instance: WeightScale.606405FFFECFC604
 InstanceOf: Device
 Title: "Poul's A&D weight scale"
@@ -606,15 +606,13 @@ Usage: #example
   * url = $observation-gatewayDevice
   * valueReference = Reference(http://example.org/fhir/Telma.FEEDDADADEADBEEF)
 * derivedFrom = Reference(http://example.org/fhir/CoincidentTimeStamp.0123)
-
-
+*/
 
 /*
  * A complex example involving a Continua-compliant observation reporting upload
  */
 
-
-
+/*
 Instance: Telma.FEEDDADADEADBEEF
 InstanceOf: Device
 Usage: #example
@@ -958,7 +956,7 @@ Usage: #example
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
   * resource = BloodPressureStatus.Poul.133527
-
+*/
 
 Instance: CenterForDiabetes
 InstanceOf: NordicOrganization
@@ -1047,11 +1045,12 @@ Usage: #example
 * identifier[=].value = "KAF"
 * type = $sct#264361005
 
+/*
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error
 Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://kombit.dk/sts/organisation' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
-
+*/
 
 Instance: 283
 InstanceOf: NordicPatient
@@ -1103,7 +1102,6 @@ Usage: #example
 * address.line = "Julianevej 22"
 * address.city = "Kolding"
 * address.postalCode = "6000"
-
 
 Instance: else
 InstanceOf: NordicPatient
@@ -1196,12 +1194,13 @@ Usage: #example
 * gender = #female
 * birthDate = "1992-03-07"
 
+/*
 Invariant: marital-status-unknown-usage
 Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
 Severity: #warning
 Expression: "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()"
 * requirements = "Marital status is legally unknown in Denmark"
-
+*/
 
 Instance: AbrahamLaege
 InstanceOf: NordicPractitioner
@@ -1232,7 +1231,7 @@ Usage: #example
 * name.family = "Mortensen"
 * qualification.code.text = "Socialrådgiver"
 
-
+/*
 Instance: Child
 InstanceOf: DkCoreRelatedPerson
 Title: "Example of child as related person"
@@ -1277,4 +1276,4 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * priority = #asap
-
+*/

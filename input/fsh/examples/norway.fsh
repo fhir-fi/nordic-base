@@ -9,6 +9,7 @@ Alias: $no-basis-family-relation = http://hl7.no/fhir/CodeSystem/no-basis-family
 Alias: $no-basis-parental-responsibility = http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility
 Alias: $no-basis-marital-status = http://hl7.no/fhir/CodeSystem/no-basis-marital-status
 
+/*
 Instance: 592411
 InstanceOf: Observation
 Usage: #example
@@ -35,6 +36,7 @@ Usage: #example
 * participant.actor = Reference(e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473) "Peter James Chalmers"
 * participant.required = #required
 * participant.status = #accepted
+*/
 
 Instance: e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473
 InstanceOf: NordicPatient
@@ -43,6 +45,7 @@ Usage: #example
 * name.family = "Chalmers"
 * name.given = "Peter James"
 
+/*
 Instance: GOFSH-GENERATED-ID-0
 InstanceOf: Observation
 Usage: #example
@@ -54,6 +57,7 @@ Usage: #example
 * subject = Reference(Patient/592410)
 * effectiveDateTime = "2020-01-22"
 * valueQuantity = 99000 'g' "gram"
+*/
 
 Instance: GOFSH-GENERATED-ID-1
 InstanceOf: Organization
@@ -179,6 +183,7 @@ Usage: #example
 * qualification[=].period.start = "2018-10-10"
 * qualification[+].code = urn:oid:2.16.578.1.12.4.1.1.7426#152 "Ortopedisk kirurgi"
 
+/*
 Instance: GOFSH-GENERATED-ID-5
 InstanceOf: RelatedPerson
 Usage: #example
@@ -280,5 +285,4 @@ Usage: #example
 * actor = Reference(e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473) "Peter James Chalmers"
 * actor.type = "Patient"
 * participantStatus = #accepted
-
-
+*/

@@ -1,3 +1,4 @@
+/*
 Instance: A121801
 InstanceOf: FiBaseAppointment
 Usage: #example
@@ -75,18 +76,13 @@ Description: "An example of a diagnosis using the FiBaseReasonForCare profile. T
 Usage: #example
 * id = "id-for-diagnosis-1"
 * category.coding = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
-
 * subject = Reference(PatientOfMunicipality)
 * code.coding = urn:oid:1.2.246.537.6.1|1999#H36.03 "Proliferatiivinen diabeettinen retinopatia"
 * code.text = "Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu"
-
 * evidence.code.coding = urn:oid:1.2.246.537.6.1|1999#E11.3 "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"
 * onsetDateTime = "2023-01-05T02:06:24+03:00"
-
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-
 * extension[PrimaryCondition].valueCoding = urn:oid:1.2.246.537.5.40005|2003#PAA "Päädiagnoosi tai päätoimenpide"
-
 * extension[Permanence].valueCoding = urn:oid:1.2.246.537.5.40003|2003#PYS "Pysyväisluonteinen"
 
 Instance: EncounterAmbulatory
@@ -372,7 +368,7 @@ Usage: #example
   * role[0]
     * coding = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
     * text = "Julkinen"
-*/    
+* /
   * who[0]
     * type = "Organization"
     * identifier
@@ -414,7 +410,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = "4"
     * display = "Työterveyshuolto"
-*/
+* /
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
 
@@ -482,7 +478,7 @@ Usage: #example
 * address[1].postalCode = "94100"
 * address[1].city = "KEMI"
 * active = true
-
+*/
 
 Instance: OrganizationPrimaryCare
 InstanceOf: NordicOrganization
@@ -608,7 +604,7 @@ Usage: #example
 * telecom.use = #work
 * telecom.value = "dave.doctor@cgi.com"
 
-
+/*
 Instance: PractitionerRoleGP
 InstanceOf: FiBasePractitionerRole
 Title: "Licenced physician in primary care"
@@ -697,7 +693,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #10
     * display = "Ammatinharjoittaja"
-*/
+* /
 
 Instance: ProvenanceCustodianOccupationalHealthcare
 InstanceOf: FiBaseInformationCustodianPrivate
@@ -737,7 +733,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
-*/
+* /
 
 Instance: ProvenanceCustodianPublicHealthcare
 InstanceOf: FiBaseInformationCustodianPublic
@@ -769,7 +765,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #2
     * display = "Julkinen terveydenhuolto"
-*/
+* /
 
 Alias: $SCT = http://snomed.info/sct
 Instance: ScheduleExample
@@ -801,4 +797,5 @@ Usage: #example
 * status = #free
 * start = "2023-01-01T12:00:00+02:00"
 * end = "2023-01-01T12:30:00+02:00"
+*/
 
