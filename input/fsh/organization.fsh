@@ -4,8 +4,8 @@ Id: combined-nordic-organization-profile
 Title: "Combined Nordic Organization Profile."
 Description: "A profile enforcing all known Nordic profiles for the Organization resource."
 // IPS
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
-* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+// * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
 // DK
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"

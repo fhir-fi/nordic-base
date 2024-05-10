@@ -4,11 +4,11 @@ Id: combined-nordic-patient-profile
 Title: "Combined Nordic Patient Profile."
 Description: "A profile enforcing all known Nordic profiles for the Patient resource."
 // IPA
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
-* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"
+// * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+// * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"
 // IPS
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
-* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+// * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
 // DK
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
