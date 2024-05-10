@@ -4,8 +4,8 @@ This is a FHIR implementation guide **meant only to be used to support harmoniza
 Nordic FHIR base profile implementation guides**.
 
 We're currently using the build.fhir.org infrastructure to publish the rendered guide.
-See 
-https://build.fhir.org/ig/fhir-fi/nordic-base/](https://build.fhir.org/ig/fhir-fi/nordic-base/) for
+See
+[https://build.fhir.org/ig/fhir-fi/nordic-base/](https://build.fhir.org/ig/fhir-fi/nordic-base/) for
 the master version, or browse
 [all branches](https://build.fhir.org/ig/fhir-fi/nordic-base/branches/).
 
