@@ -1,15 +1,21 @@
 # Nordic Base Profile Experimentation
 
-Checking how much the Nordic FHIR base profiles differ from each other.
+This "implementation guide" assists in checking how much the Nordic FHIR base profiles differ from
+each other.
 
+{:.dragon}
+This implementation guide is only meant to support harmonization efforts between Nordic FHIR base
+profile specifications.
 
-TODO:
-1) Create profiles for all resource types profiled by any of the Nordic IGs.
-   One that imposes all (?) the Nordic profiles for that resource type. 
-2) Import all the examples from all the base specifications.
-   Make all examples examples of the relevant Nordic profile.
-3) See the QA report...
+### Dependencies
 
-### Dependency Table
+{% include dependency-table-short.xhtml %}
 
-{% include dependency-table.xhtml %}
+{% include cross-version-analysis.xhtml %}
+
+{% include globals-table.xhtml %}
+
+### IPR
+
+{% include ip-statements.xhtml %}
+
