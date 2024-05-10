@@ -3,28 +3,22 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.eu.fhir.coalesced
-canonical: http://hl7.eu/fhir/ig/coalesced
-name: CoalescedImplementationGuide
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+id: hl7.fi.fhir.nordic
+canonical: http://hl7.fi/fhir/nordic-base
+name: Combined Nordic FHIR Base Profiles
+title: Combined Nordic FHIR Base Profiles
+description: An implementation guide to be used as a tool when comparing interoperability of Nordic FHIR base profiles
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.2.0-ci
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
-  # email: test@example.org
-
-# The dependencies property corresponds to IG.dependsOn. The key is the
-# package id and the value is the version (or dev/current). For advanced
-# use cases, the value can be an object with keys for id, uri, and version.
-#
-
+  name: HL7 Finland
+  url: https://hl7.fi/
+  email: mikael@sensotrend.com
 
 # See also https://confluence.hl7.org/display/IC/National+IG+Implementations
 dependencies:
@@ -33,35 +27,14 @@ dependencies:
     # IPS
     hl7.fhir.uv.ips: 1.1.0
     # Denmark
-    hl7.fhir.dk.core: 3.0.0
+    hl7.fhir.dk.core: 3.2.0
     # Norway
     hl7.fhir.no.basis: 2.2.0
     # Sweden
     hl7se.fhir.base: 1.0.0
     # Finland
     hl7.fhir.fi.base: 1.0.0
-    # Germany
-    de.basisprofil.r4: 1.5.0-alpha2
-    # Switzerland
-    ch.fhir.ig.ch-core: 4.0.1
-    # Belgium
-    hl7.fhir.be.core: 2.0.1
-    # Estonia
-    hl7.fhir.ee.base: 1.0.0
-    # France
-    hl7.fhir.fr.core: 1.1.0
-    # UK
-    fhir.r4.ukcore.stu3.currentbuild: 0.0.8-pre-release
-    # Netherlands
-    nictiz.fhir.nl.r4.nl-core: 0.10.0-beta.1
 
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
-#
-#
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the
