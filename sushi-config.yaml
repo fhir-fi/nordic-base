@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fi.fhir.nordic
+id: hl7.fhir.fi.nordic
 canonical: http://hl7.fi/fhir/nordic-base
 name: Combined Nordic FHIR Base Profiles
 title: Combined Nordic FHIR Base Profiles
