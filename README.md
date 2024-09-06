@@ -14,3 +14,7 @@ The most valuable output is probably the
 
 Currently the inputs are authored manually, copy-pasting content from all the base profile
 specifications.
+
+Also please note that the build.fhir.org infrastructure is not a permanent storage for
+implementation guides, so the compiled version may not be available. We are working on getting
+the guide published in a proper location.
