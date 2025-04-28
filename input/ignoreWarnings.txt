@@ -3,3 +3,13 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# There are plenty of oid's and other code systems that are not exposed by FHIR terminology servers.
+Terminology_TX_System_NotKnown
+Terminology_TX_ValueSet_NotFound
+A definition for CodeSystem %
+
+# This is a valid information, and should be considered.
+# However, it is just information and as such does not cause harm for interoperability.
+This element does not match any known slice defined in the profile %
+
