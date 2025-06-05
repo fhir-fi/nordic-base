@@ -43,6 +43,9 @@ Description: "A profile enforcing all known European profiles for the Patient re
 // UK
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
+// AT
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+* ^extension[=].valueCanonical = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-patient"
 
 Instance: JohnDoe
 InstanceOf: CombinedEuropeanPatient
