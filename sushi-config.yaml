@@ -29,11 +29,11 @@ dependencies:
     # Denmark
     hl7.fhir.dk.core: 3.4.0
     # Finland
-    hl7.fhir.fi.base: 1.0.0
+    hl7.fhir.fi.base: 2.0.0-rc2
     # Norway
     hl7.fhir.no.basis: 2.2.0
     # Sweden
-    hl7se.fhir.base: 1.0.0
+    hl7se.fhir.base: 1.1.0
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
